@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+body{
+    font-family: "Lato", sans-serif;
+}
+.conteiner-body{
+    max-width: 1230px;
+    margin: 0 auto;
+}
+p{
+    font-size: 24px;
+    font-weight: 700;
+}
+li{
+    font-size: 32px;
+    padding: 15px 0 5px 5px;
+    font-weight: 900;
+    
+}
+ul{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+li:hover{
+    text-decoration: underline;
+
+}
+.buton{
+    color: green;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    display: inline-block;
+}
+.buton::before{
+    content: url("../img/vector_go_left.svg");
+}
+.buton::after{
+    content: url("../img/vector_go_right.svg");
+    
+}
+.buton:hover{
+    color: greenyellow;
+    font-size: 35px;
+    text-shadow: 2px 2px 5px red;
+}
+.on{
+    margin-bottom: 15px;
+}
+.one__optimized{
+    border: 5px solid black;
+    margin-bottom: 20px;
+       
+}
+img.one__optimized{
+    max-width: 100%;
+    
+}
+
+.__info p{
+    visibility: hidden;
+    padding: 5px;
+    display: inline-block;
+}
+.__info p:nth-child(1){
+    visibility: visible;
+}
+.__info p:nth-child(1):hover + p{
+    visibility: visible;
+    font-size: 28px;
+    color: rgb(224, 79, 11);
+    text-transform: uppercase;
+}
+.__info p:nth-child(2):hover, p:nth-child(2):active + p{
+    visibility: visible;
+    font-size: 28px;
+    color: rgb(224, 79, 11);
+}
+.__info p:nth-child(2):active + p{
+    visibility: visible;
+    font-size: 50px;
+    color: rgb(14, 197, 197);
+    margin-bottom: 10px;
+}
+.__info p:nth-child(1){
+    color: rgb(196, 13, 13);
+    font-size: 36px;
+}
+
+.two__optimized{
+    border: 5px solid black;
+    margin-bottom: 25px;
+}
+img.two__optimized{
+    max-width: 100%;
+}
